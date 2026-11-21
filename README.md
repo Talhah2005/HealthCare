@@ -1,4 +1,4 @@
-# HealthMate — AI-Powered Healthcare Companion
+# HealthMate - AI-Powered Healthcare Companion
 
 [![CI - Pull Request Validation](https://github.com/Talhah2005/HealthCare/actions/workflows/ci.yml/badge.svg)](https://github.com/Talhah2005/HealthCare/actions/workflows/ci.yml)
 [![CD - Deploy HealthMate](https://github.com/Talhah2005/HealthCare/actions/workflows/deploy.yml/badge.svg)](https://github.com/Talhah2005/HealthCare/actions/workflows/deploy.yml)
@@ -37,9 +37,9 @@ The project uses a React frontend, an Express REST API, MongoDB, Google Gemini, 
 
 HealthMate combines three practical healthcare workflows:
 
-1. **Medical record management** — upload and classify reports such as lab reports, X-rays, MRI, CT, ultrasound, ECG, and prescriptions.
-2. **Health tracking** — record and review personal vitals including blood pressure and other measurements.
-3. **AI-assisted understanding** — extract report text, create English and Urdu summaries, identify abnormal values, and provide conversational answers about a report.
+1. **Medical record management** - upload and classify reports such as lab reports, X-rays, MRI, CT, ultrasound, ECG, and prescriptions.
+2. **Health tracking** - record and review personal vitals including blood pressure and other measurements.
+3. **AI-assisted understanding** - extract report text, create English and Urdu summaries, identify abnormal values, and provide conversational answers about a report.
 
 The platform is intended for users who want one accessible timeline for documents and measurements rather than several disconnected applications or paper records.
 
@@ -195,9 +195,9 @@ Built React SPA          Express backend (:5000)
 
 Docker Compose provides three application services:
 
-- `mongo` — MongoDB with an authenticated administrator account and persistent `mongo-data` volume.
-- `backend` — Express API built from `HealthCare-Backend/Dockerfile`.
-- `frontend` — React production build served by Nginx, also proxying `/api/` to the backend.
+- `mongo` - MongoDB with an authenticated administrator account and persistent `mongo-data` volume.
+- `backend` - Express API built from `HealthCare-Backend/Dockerfile`.
+- `frontend` - React production build served by Nginx, also proxying `/api/` to the backend.
 
 Both application containers join the `frontend-network`; the backend and MongoDB join the `backend-network`. MongoDB is not published to the host in `docker-compose.yaml`, limiting direct external access.
 
